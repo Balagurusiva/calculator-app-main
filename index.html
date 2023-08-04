@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="d-flex alifn-items-center justify-content-around bg-dark">
+
+  <div class="container  ">
+    <h1>calculator</h1>
+    <p id="textArea" style="background-color:white; width:300px;height:50px"></p>
+
+    <input type="text" name="reset" value="Reset" style="text-align:center" onclick="spclbtn(this.name)"  readonly>
+    <input type="text" name="bs" value="DEL" style="text-align:center" onclick="spclbtn(this.name)" readonly>
+    <input type="text" name="1" value="1" style="text-align:center" onclick="perform(this.name)" readonly>
+    <input type="text" name="2" value="2" style="text-align:center" onclick="perform(this.name)" readonly>
+    <input type="text" name="3" value="3" style="text-align:center" onclick="perform(this.name)" readonly>
+    <input type="text" name="4" value="4" style="text-align:center" onclick="perform(this.name)" readonly>
+    <input type="text" name="5" value="5" style="text-align:center" onclick="perform(this.name)" readonly>
+    <input type="text" name="6" value="6" style="text-align:center" onclick="perform(this.name)" readonly>
+    <input type="text" name="7" value="7" style="text-align:center" onclick="perform(this.name)" readonly>
+    <input type="text" name="8" value="8" style="text-align:center" onclick="perform(this.name)" readonly>
+    <input type="text" name="9" value="9" style="text-align:center" onclick="perform(this.name)" readonly>
+    <input type="text" name="0" value="0" style="text-align:center" onclick="perform(this.name)" readonly>
+    <input type="text" name="+" value="+" style="text-align:center" onclick="perform(this.name)" readonly>
+    <input type="text" name="*" value="*" style="text-align:center" onclick="perform(this.name)" readonly>
+    <input type="text" name="/" value="/" style="text-align:center" onclick="perform(this.name)" readonly>
+    <input type="text" name="-" value="-" style="text-align:center" onclick="perform(this.name)" readonly>
+    <input type="text" name="=" value="=" style="text-align:center" onclick="perform(this.name)" readonly>
+    <input type="text" name="." value="." style="text-align:center" onclick="perform(this.name)" readonly>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html> 
