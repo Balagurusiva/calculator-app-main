@@ -6,16 +6,13 @@ body{
 }
 
 :root{
-    --bg:hsl(268, 75%, 9%);
+    --bg:black;;
+   
 }
-
-.white-theme{
-    --bg:white;
-}
+ 
 .container{
     width: 400px !important;
     background-color: white;
-    
     padding: 20px;
 }
 
