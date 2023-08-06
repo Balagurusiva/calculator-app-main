@@ -1,7 +1,18 @@
+
+
+
+
+
 const textarea = document.getElementById('textArea')
+const icon = document.getElementById("icon")
     let a=""
     let b=""
     let op=""
+
+    icon.onclick = function(){
+      document.body.classList.toggle("white-theme")
+    }
+
 
     function operation(){
       switch(op){
