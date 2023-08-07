@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Calculator app</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css" rel="stylesheet" />
   <link rel="stylesheet" href="./style.css">
 </head>
 <body class="d-flex align-items-center justify-content-around ">
@@ -13,12 +14,29 @@
   <div class="container">
     <div class="d-flex align-items-center justify-content-between mb-3">
       <h2>cal</h2>
-      <div id="icon">
-        <ul>
-          <li id = theme1></li>
-          <li id = theme2></li>
-          <li id = theme3></li>
-        </ul>
+
+     
+      <div id="icon" class="d-flex align-items-center justify-content-between">
+        <div class="num mt-4 mr-5"> 
+          <p>THEME</p>
+        </div>
+        <div class="d-flex flex-column">
+          <div class="d-flex justify-content-evenly num">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+          <div>
+            <ul class="d-flex align-items-center justify-content-evenly p-0">
+              <li id = theme1 style="background-color:hsl(25, 98%, 40%)">&nbsp;</li>
+              <li id = theme2>&nbsp;</li>
+              <li id = theme3>&nbsp;</li>
+            </ul>
+          </div>
+           
+        </div>
+        
+         
       </div> 
     </div>
 
@@ -58,8 +76,8 @@
       </div>
 
       <div class="row">
-        <input type="text" name="reset" value="Reset" onclick="spclbtn(this.name)" class="col reset"  readonly>
-        <input type="text" name="=" value="=" onclick="perform(this.name)" class="col eql" readonly> 
+        <input type="text" name="reset" value="Reset" onclick="spclbtn(this.name)" class="reset col "  readonly>
+        <input type="text" name="=" value="=" onclick="perform(this.name)" class=" eql col " readonly> 
       </div>
     </div>
     
